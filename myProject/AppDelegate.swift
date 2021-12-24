@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import UserNotifications
+import UserNotificationsUI
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,7 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { _, _ in }
+        
+        
+        let stopAction = UNNotificationAction(identifier: "stop-action", title: "Stop", options: [])
+        
+        
+        let testNotificationCategory = UNNotificationCategory(identifier: "clevertapnotification", actions: [stopAction], intentIdentifiers: [], options: [])
+        UNUserNotificationCenter.current().setNotificationCategories([testNotificationCategory])
+        
         return true
+        
     }
 
     // MARK: UISceneSession Lifecycle

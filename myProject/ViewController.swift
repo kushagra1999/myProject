@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import myFramework
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func login(_ sender: Any) {
+        present(myFrameworkView(), animated: true, completion: nil)
+       
+    }
+    
 }
 
