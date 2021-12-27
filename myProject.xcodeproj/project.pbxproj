@@ -18,7 +18,6 @@
 		0BEE22D42775F38200296AF4 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEE22D32775F38200296AF4 /* UserNotifications.framework */; };
 		0BEE22D62775F38200296AF4 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEE22D52775F38200296AF4 /* UserNotificationsUI.framework */; };
 		0BEE22D92775F38200296AF4 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE22D82775F38200296AF4 /* NotificationViewController.swift */; };
-		0BEE22DC2775F38200296AF4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BEE22DA2775F38200296AF4 /* MainInterface.storyboard */; };
 		0BEE22E02775F38200296AF4 /* myContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0BEE22D22775F38200296AF4 /* myContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0BEE22E62775F38F00296AF4 /* myFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEE22E52775F38F00296AF4 /* myFramework.framework */; };
 		0BEE22E72775F38F00296AF4 /* myFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEE22E52775F38F00296AF4 /* myFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -84,7 +83,6 @@
 		0BEE22D32775F38200296AF4 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		0BEE22D52775F38200296AF4 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		0BEE22D82775F38200296AF4 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
-		0BEE22DB2775F38200296AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0BEE22DD2775F38200296AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BEE22E52775F38F00296AF4 /* myFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = myFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				0BEE22D82775F38200296AF4 /* NotificationViewController.swift */,
-				0BEE22DA2775F38200296AF4 /* MainInterface.storyboard */,
 				0BEE22DD2775F38200296AF4 /* Info.plist */,
 			);
 			path = myContent;
@@ -258,7 +255,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BEE22DC2775F38200296AF4 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +304,6 @@
 				0BEE22C12775DC6300296AF4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		0BEE22DA2775F38200296AF4 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BEE22DB2775F38200296AF4 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

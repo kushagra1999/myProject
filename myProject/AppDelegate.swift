@@ -28,6 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
         
     }
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+
+        print("didReceive Method called")
+
+        
+        completionHandler()
+    }
 
     // MARK: UISceneSession Lifecycle
 
