@@ -11,10 +11,7 @@ import UserNotificationsUI
 import myFramework
 @objc(NotificationViewController)
 class NotificationViewController: baseView{
-    
-
-    
-    
+ 
     override func viewDidLoad() {
        
         super.viewDidLoad()
