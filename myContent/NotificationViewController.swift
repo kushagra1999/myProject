@@ -1,10 +1,3 @@
-//
-//  NotificationViewController.swift
-//  myContent
-//
-//  Created by Kushagra Mishra on 24/12/21.
-//
-
 import UIKit
 import UserNotifications
 import UserNotificationsUI

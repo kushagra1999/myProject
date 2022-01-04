@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  myProject
-//
-//  Created by Kushagra Mishra on 24/12/21.
-//
-
 import UIKit
 import UserNotifications
 import UserNotificationsUI
@@ -17,16 +10,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) { _, _ in }
-        
-        
-        let stopAction = UNNotificationAction(identifier: "stop-action", title: "Stop", options: [])
-        
-        
-        let testNotificationCategory = UNNotificationCategory(identifier: "clevertapnotification", actions: [stopAction], intentIdentifiers: [], options: [])
+        let stopAction = UNNotificationAction(identifier: "stop-action", title: "View in App", options: [])
+        let testNotificationCategory = UNNotificationCategory(identifier: "CTNotification", actions: [stopAction], intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([testNotificationCategory])
-        
         return true
-        
     }
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
 

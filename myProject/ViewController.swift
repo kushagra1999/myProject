@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  myProject
-//
-//  Created by Kushagra Mishra on 24/12/21.
-//
-
 import UIKit
 import myFramework
 class ViewController: UIViewController {
